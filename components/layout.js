@@ -18,7 +18,7 @@ export default function Layout({ children }) {
         />
       </Head>
       <Header />
-      <main>{children}</main>
+      <main className={styles.main}>{children}</main>
     </div>
   );
 }

@@ -4,11 +4,11 @@ import utilStyles from "../styles/utils.module.css";
 
 export default function Home() {
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.mainWrapper}>
+      <section>
         <p>Hello! My name is Sel. I am a Software Engineer.</p>
       </section>
     </Layout>

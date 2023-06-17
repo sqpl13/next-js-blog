@@ -3,12 +3,11 @@ import path from "path";
 import cheerio from "cheerio";
 import Link from "next/link";
 import Layout from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
 
 export default function Blog({ posts }) {
   return (
     <Layout>
-      <section className={utilStyles.mainWrapper}>
+      <section>
         <h1>Blog</h1>
         <ul>
           {posts.map((post) => (
@@ -33,7 +32,7 @@ export async function getStaticProps() {
     const title = $("title").text();
 
     return {
-      slug: filename.replace(/\.md$/, ""),
+      slug: filename.replace(/\.[^/.]+$/, ""),
       title: title,
     };
   });
