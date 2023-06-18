@@ -9,7 +9,7 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section>
-        <p>Hello! My name is Sel. I am a Software Engineer.</p>
+        <p>HOME PAGE</p>
       </section>
     </Layout>
   );

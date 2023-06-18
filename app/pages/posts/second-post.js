@@ -6,12 +6,9 @@ export default function FirstPost() {
   return (
     <Layout>
       <Head>
-        <title>First Post</title>
+        <title>Second Post Post</title>
       </Head>
-      <h1>First Post</h1>
-      <h2>
-        <Link href="/">← Back to home</Link>
-      </h2>
+      <h1>Second Post</h1>
     </Layout>
   );
 }
