@@ -1,5 +1,3 @@
-// article.js
-
 export default {
   title: 'Article',
   name: 'article',

@@ -50,4 +50,16 @@
   .lightText {
     color: #666;
   }
-  
+
+  .coverImage {
+    width: 640px;
+    height: auto;
+  }
+
+  .title {
+    margin-block-end: 0; 
+  }
+
+  .meta {
+    margin-block-start: 0;
+  }
