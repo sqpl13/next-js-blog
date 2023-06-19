@@ -9,7 +9,7 @@ export async function getStaticProps() {
     const response = await sanityClient.get("", {
       params: {
         query:
-          '*[_type == "article"]{title, slug, content, publicationDate, "author": author->name, "coverImage": coverImage.asset->{url}}',
+          '*[_type == "article"]{title, slug, content, publicationDate, "category":category->{title}, "author": author->name, "coverImage": coverImage.asset->{url}}',
       },
     });
 
@@ -68,7 +68,8 @@ export default function Article({ articles }) {
           <article>
             <h1 className={styles.title}>{article.title}</h1>
             <p className={styles.meta}>
-              By: {`${article.author} Published: ${article.publicationDate}`}
+              By:{" "}
+              {`${article.author} Published: ${article.publicationDate} In: ${article.category.title}`}
             </p>
             <img
               src={`${article.coverImage.url}`}

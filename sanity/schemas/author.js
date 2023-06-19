@@ -22,6 +22,5 @@ export default {
         hotspot: true,
       },
     },
-    // Add additional fields for social media links, website, etc., if desired
   ],
 }

@@ -52,17 +52,11 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
-      title: 'Categories',
-      name: 'categories',
-      type: 'array',
-      of: [{type: 'reference', to: [{type: 'category'}]}],
+      title: 'Category',
+      name: 'category',
+      type: 'reference',
+      to: [{type: 'category'}],
       validation: (Rule) => Rule.required(),
-    },
-    {
-      title: 'Tags',
-      name: 'tags',
-      type: 'array',
-      of: [{type: 'string'}],
     },
   ],
 }
