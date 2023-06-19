@@ -1,9 +1,10 @@
 .footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 20px;
     background-color: #f2f2f2;
+    flex-direction: column;
   }
   
   .logo a {
@@ -18,14 +19,20 @@
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
   }
   
   .nav li {
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   
   .nav a {
     text-decoration: none;
     color: #333;
+  }
+
+  .copyright {
+    margin-bottom: 0;
   }
   

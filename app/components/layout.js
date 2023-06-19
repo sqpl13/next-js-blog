@@ -6,7 +6,7 @@ import Header from "./header";
 import Footer from "./footer";
 
 const name = "Sel L.";
-export const siteTitle = "Next.js Sample Website";
+export const siteTitle = "Coder's Quest";
 
 export default function Layout({ children }) {
   return (

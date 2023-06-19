@@ -4,9 +4,6 @@ import styles from "../styles/footer.module.css";
 export default function Header() {
   return (
     <footer className={styles.footer}>
-      <div className={styles.logo}>
-        <Link href="/">My Blog</Link>
-      </div>
       <nav className={styles.nav}>
         <ul>
           <li>
@@ -18,8 +15,12 @@ export default function Header() {
           <li>
             <Link href="/about">About</Link>
           </li>
+          <li>
+            <Link href="/contact">Contact</Link>
+          </li>
         </ul>
       </nav>
+      <p className={styles.copyright}>Copyright © 2023 Coder's Quest</p>
     </footer>
   );
 }
