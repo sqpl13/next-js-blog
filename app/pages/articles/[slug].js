@@ -1,5 +1,5 @@
+import React from "react";
 import Head from "next/head";
-import Link from "next/link";
 import Layout from "../../components/layout";
 import styles from "../../styles/utils.module.css";
 import sanityClient from "../../utils/sanity";
@@ -75,8 +75,8 @@ export default function Article({ articles }) {
               className={styles.coverImage}
               alt="Cover Image"
             />
-            {article.content.map((block) => (
-              <>
+            {article.content.map((block, index) => (
+              <React.Fragment key={index}>
                 {block._type === "block" && block.style === "h2" && (
                   <h2>{block.children[0].text}</h2>
                 )}
@@ -87,7 +87,7 @@ export default function Article({ articles }) {
                       {child.text}
                     </p>
                   ))}
-              </>
+              </React.Fragment>
             ))}
           </article>
         </Layout>

@@ -1,6 +1,6 @@
 # Next JS Blog
 
-An immersive project dedicated to meticulously documenting my experiences as a software engineer, capturing the valuable insights and milestones achieved throughout my coding journey.
+A project dedicated to documenting my journey as a software engineer.
 
 ## Tech Stack
 
