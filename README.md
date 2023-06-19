@@ -1,6 +1,6 @@
-# Portfolio
+# Next JS Blog
 
-This repository contains my personal portfolio showcasing my projects and skills.
+An immersive project dedicated to meticulously documenting my experiences as a software engineer, capturing the valuable insights and milestones achieved throughout my coding journey.
 
 ## Tech Stack
 
