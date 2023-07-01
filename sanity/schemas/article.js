@@ -48,7 +48,27 @@ export default {
       title: 'Content',
       name: 'content',
       type: 'array',
-      of: [{type: 'block'}],
+      of: [
+        {
+          type: 'block',
+          marks: {
+            annotations: [
+              {
+                name: 'link',
+                type: 'object',
+                title: 'Link',
+                fields: [
+                  {
+                    name: 'href',
+                    type: 'url',
+                    title: 'URL',
+                  },
+                ],
+              },
+            ],
+          },
+        },
+      ],
       validation: (Rule) => Rule.required(),
     },
     {
@@ -56,7 +76,6 @@ export default {
       name: 'category',
       type: 'reference',
       to: [{type: 'category'}],
-      validation: (Rule) => Rule.required(),
     },
   ],
 }
